@@ -550,5 +550,9 @@ if [ ${#OPENSSLCONF_ALL[@]} -gt 1 ]; then
   echo "#endif" >> "${OPENSSLCONF_INTERMEDIATE}"
 fi
 
-echo "Done."
+# Fix the header files' include
+for header in include/openssl/*.h; do
+    sed -i '' -e 's/<openssl\/\(.*\)>/"\1"/' "$header";
+done
 
+echo "Done."

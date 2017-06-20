@@ -1,3 +1,6 @@
 xcuserdata/
 
 /include/openssl/
+/bin/
+/lib/
+/openssl-*.tar.gz
