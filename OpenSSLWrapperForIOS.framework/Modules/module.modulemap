@@ -1,0 +1,6 @@
+framework module OpenSSLWrapperForIOS {
+  umbrella header "OpenSSLWrapperForIOS.h"
+
+  export *
+  module * { export * }
+}
