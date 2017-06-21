@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/zsoltmester/OpenSSLWrapperForIOS.git", :tag => "#{s.version}" }
   s.authors      = {'Zsolt Mester' => 'zsolt.mester67@gmail.com'}
 
-  s.source_files = 'OpenSSLWrapperForIOS.framework/Headers/*.h'
-
   s.ios.deployment_target = '8.0'
   s.ios.vendored_frameworks = 'OpenSSLWrapperForIOS.framework'
+  s.ios.source_files = 'OpenSSLWrapperForIOS.framework/Headers/*.h'
+  s.ios.public_header_files = 'OpenSSLWrapperForIOS.framework/Headers/*.h'
 end
